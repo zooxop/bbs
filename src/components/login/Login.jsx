@@ -31,10 +31,15 @@ const Login = () => {
             signInWithEmailAndPassword(auth, email, pass)
             .then(success=>{
                 sessionStorage.setItem("email", email);
-                //sessionStorage.setItem("uid", success.user.uid);
-                navi('/');
+                sessionStorage.setItem("uid", success.user.uid);
                 setLoading(false);
                 alert("로그인 성공!");
+
+                if (sessionStorage.getItem('target')) {
+                    navi(sessionStorage.getItem('target'));
+                } else {
+                    navi('/');
+                }
             })
             .catch(err=>{
                 alert(`로그인에러:${err.message}`);

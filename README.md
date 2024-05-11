@@ -8,7 +8,8 @@
 - axios
 - react-router-dom
 - firebase
+- react-icons
 
 ```bash
-$ yarn add react-bootstrap bootstrap axios react-router-dom firebase
+$ yarn add react-bootstrap bootstrap axios react-router-dom firebase react-icons
 ```

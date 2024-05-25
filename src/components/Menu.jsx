@@ -9,6 +9,7 @@ import About from './About';
 import Locals from './local/Locals';
 import Bookmark from './local/Bookmark';
 import Join from './user/Join';
+import Mypage from './user/Mypage';
 
 const Menu = () => {
     const navi = useNavigate();
@@ -46,7 +47,7 @@ const Menu = () => {
                         {sessionStorage.getItem("email") ?
                             <>
                                 <Nav>
-                                    <Nav.Link href="#">{sessionStorage.getItem('email')}</Nav.Link>
+                                    <Nav.Link href="/mypage">{sessionStorage.getItem('email')}</Nav.Link>
                                     <Nav.Link href="#" onClick={onLogout}>로그아웃</Nav.Link>
                                 </Nav>
                             </>
@@ -66,6 +67,7 @@ const Menu = () => {
                 <Route path='/login' element={<Login />} />
                 <Route path='/bookmark' element={<Bookmark />} />
                 <Route path='/join' element={<Join />} />
+                <Route path='/mypage' element={<Mypage />} />
             </Routes>
         </>
     );

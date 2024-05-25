@@ -9,7 +9,8 @@
 - react-router-dom
 - firebase
 - react-icons
+- react-daum-postcode
 
 ```bash
-$ yarn add react-bootstrap bootstrap axios react-router-dom firebase react-icons
+$ yarn add react-bootstrap bootstrap axios react-router-dom firebase react-icons react-daum-postcode
 ```

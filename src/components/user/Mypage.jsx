@@ -73,7 +73,7 @@ const Mypage = () => {
                         <h3 className='text-center'>마이페이지</h3>
                     </Card.Header>
                     <Card.Body>
-                        <div>
+                        <div className='text-center'>
                             <ModalPhoto setLoading={setLoading} form={form} setForm={setForm} />
                         </div>
                         <form onSubmit={onSubmit}>
